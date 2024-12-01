@@ -1,0 +1,109 @@
+.all-div {
+  display: flex;
+  flex: 1fr; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .marco-div {
+    flex-basis: 45%; /* Adjust the flex-basis to occupy more space */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  .marco-div {
+    flex-basis: 100%; /* Make each div occupy the full width */
+  }
+}
+
+
+.marco-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 250px; 
+  height: 420px;
+  width: 250px;
+  flex-basis: 400px;
+  max-width: 250px;
+  margin-right: 8px;
+  margin-left: 4px;
+  margin-top: 30px;
+  border-style: solid;
+  border: 1;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.img-game {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-bottom-color:  blue;
+  border-bottom: 1;
+  border-bottom-style: solid;
+}
+
+.contenido-game {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 11px;
+}
+
+.title-game {
+  font-size: 19px;
+  font-style: italic;
+  color: rgb(0, 153, 255); 
+}
+
+.weigth-game,
+.installation-console {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.button-div {
+  display: flex;
+  margin-top: 22px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-buy {
+  background-color: red;
+  height: 30px;
+  width: 130px;
+  color: white;
+  font-size: 18px;
+  border-style: solid;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.button-buy:active {
+  background-color: rgb(53, 187, 0);
+}
